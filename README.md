@@ -1,20 +1,92 @@
 # GooglePlayStore_Python-EDA_Project
-This project was called App Insights Analysis, where I analyzed Google Play Store application data using Python.
+# 1. Project Overview
 
-The main objective was to understand application performance, user preferences, and the factors associated with app ratings and popularity.
+The Google Play Store App Insights project explores app-market data
+to understand application popularity, user ratings, downloads, app size,
+pricing, categories, update activity, and customer feedback.
 
-I worked with two datasets. The first contained application information such as category, rating, installs, size, and price. The second contained user reviews and sentiment classifications.
+The business case describes a technology company that wants to use
+Google Play Store data to improve app development strategies, enhance
+user experience, increase downloads, and identify revenue opportunities.
 
-I used Pandas for data cleaning and manipulation, NumPy for numerical operations, and Matplotlib and Seaborn for data visualization.
+# 2. Business requirements
+• Find popular app categories and most-installed apps.
 
-During the project, I analyzed average ratings, app categories, free versus paid applications, reported installs, application sizes, update patterns, and user sentiment.
+• Understand factors associated with high app ratings.
 
-One of the main challenges was handling missing values, duplicate records, and inconsistent data formats. I also learned that install figures such as 1,000+ are approximate thresholds and should not be treated as exact download counts.
+• Compare free and paid apps.
 
-One important finding was that the average application rating was approximately 4.19 out of 5 after cleaning. I also found that the relationship between reported installs and ratings was very weak, which showed that popularity does not necessarily mean higher user satisfaction.
+• Explore app size, price, installs and reviews.
 
-Another finding was that approximately 64% of reviews with available sentiment labels were classified as positive.
+• Analyse update activity and review sentiment.
 
-Based on the analysis, I would recommend investigating negative user feedback, comparing app categories using multiple metrics, and monitoring app performance through an interactive dashboard.
+• Present findings with visualisations and recommendations.
 
-Overall, this project improved my Python programming, data-cleaning, exploratory data analysis, and visualization skills. It also helped me understand how to translate raw data into useful business recommendations.
+# 3. Tools and technologies
+• Python: main analysis language.
+
+• Jupyter Notebook: execute and document the analysis.
+
+• Pandas: load, clean, filter, group and aggregate data.
+
+• NumPy: numerical operations.
+
+• Matplotlib / Seaborn: charts and statistical visualisations.
+
+# 4. Challenges faced
+• Mixed formats in installs, price, reviews and app size.
+
+• Missing ratings, app metadata and review sentiment.
+
+• Malformed category value and duplicate records.
+
+• Highly skewed install counts.
+
+• Interpreting correlations without claiming causation.
+
+• Comparing review sentiment when many labels are missing.
+
+# 5. Key results from the notebook
+• Average app rating: 4.19 / 5
+
+• Unique categories: 33
+
+• Free / Paid app records: 9,591 / 765 (1 missing type)
+
+• Apps rated: 4.0+	6,947
+
+• Most common content rating:	Everyone (8,382 records)
+
+• Average app size / median: 21.29 MB / 13 MB
+
+• Largest average app size by category:	Games (44.13 MB)
+
+• Top category by listed installs: Game (31.54 billion)
+
+• Apps last updated in 2018: 6,934
+
+• Installs–rating correlation: 0.051 (very weak positive)
+
+• Size–installs correlation: 0.169 (weak positive)
+
+# 6. Review sentiment results
+• Positive: 23,998
+
+• Negative: 8,271
+
+• Neutral: 5,163
+
+• Missing sentiment: 26,863
+
+# 7. Recommendations
+• Use negative review themes to prioritise fixes and improve user experience.
+
+• Benchmark high-performing categories, while checking app counts and review volume.
+
+• Optimise app size alongside speed and functionality; size alone does not explain installs.
+
+• Evaluate free/paid pricing using adequate sample sizes.
+
+• Monitor update activity and user feedback after releases.
+
+• Improve sentiment coverage and report missing sentiment separately.
